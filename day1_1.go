@@ -16,6 +16,7 @@ func abs(num int) int {
 }
 
 func main() {
+	// reading the problem section
 	file, err := os.Open("problem/day1.txt")
 	if err != nil {
 		panic(err)
@@ -34,10 +35,8 @@ func main() {
 		}
 		col1 = append(col1, col1_num)
 		col2 = append(col2, col2_num)
-
-		// fmt.Println(scanner.Text()[0:5], scanner.Text()[5+3:])
-		// fmt.Println(scanner.Text())
 	}
+	// solution section
 	slices.Sort(col1)
 	slices.Sort(col2)
 	var distance int
